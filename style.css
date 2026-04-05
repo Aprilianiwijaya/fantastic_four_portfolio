@@ -163,6 +163,87 @@ footer {
     transform: translateY(40px);
 }
 
+/* ===================== */
+/* RESPONSIVE MOBILE */
+/* ===================== */
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .hero-img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    /* Team */
+    .team {
+        padding: 40px 20px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Project */
+    .project {
+        padding: 40px 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 30px 20px;
+    }
+}
 .team-card.show, .project-card.show {
     opacity: 1;
     transform: translateY(0);
